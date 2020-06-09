@@ -1,0 +1,90 @@
+/*Globals styles*/
+.bg-color{
+  background-color: rgba(255, 228, 196, 0.89);
+}
+.all-titles{
+  font-family: 'Dancing Script', cursive;
+  color: rgba(27, 130, 170, 0.61);
+}
+.subtitulo-slogan{
+  font-family: 'Handlee', cursive;
+}
+
+.paragraph{
+  font-family: 'Handlee', cursive;
+  font-size: 21px;
+}
+.contenedor{
+  width: 100%;
+  background-color:rgba(27, 130, 170, 0.219);
+}
+/*Navbar Styles*/
+.navbar-color{
+  
+ }
+.nav-brand{
+  font-size: 46px;
+  font-family: 'Dancing Script', cursive;
+  color: rgba(27, 130, 170, 0.527);
+  margin-left: 15px;
+  margin-bottom: 16px;
+  
+}
+.navbar-links-colors{
+  color: rgba(27, 130, 170, 0.61);
+  font-size: 20px;
+  font-family: 'Lobster Two', cursive;
+  
+}
+.navbar-links-colors:hover{
+  text-decoration: none;
+  color:black;
+  
+}
+
+.dropdown-link:hover{
+  color:black;
+
+}
+/*Landingpages Styles*/
+.titulo-descripcion{
+  font-family: 'Handlee', cursive;
+  color: rgba(27, 130, 170, 0.61);
+}
+.social-icons{
+  background-color: #DCDCDC;
+  border: 1px solid rgba(27, 130, 170, 0.61);
+  width: 50px;
+  margin: 5px;
+}
+.social-icons:hover{
+  background-color: rgba(27, 130, 170, 0.61);
+  border:none;
+}
+.social-icons i {
+  
+}
+.fa-facebook-f, .fa-instagram, .fa-envelope{
+  color:rgba(0, 0, 255, 0.568);
+  font-size: 17px;
+}
+
+/*Contact Styles*/
+
+
+
+/*Content Styles*/
+.content{
+  background-color: rgba(255, 228, 196, 0.014);
+}
+
+/*Products Styles*/
+.products-grid{
+  display: flex;
+}
+.tabs p{
+  font-family: 'Handlee', cursive;
+  color: rgba(27, 130, 170, 0.527);
+  font-size: 18px;
+  
+}

@@ -1,10 +1,10 @@
 /*Globals styles*/
 .bg-color{
-  background-color: rgba(255, 228, 196, 0.89);
+  background-color: #c0dfd9;
 }
 .all-titles{
   font-family: 'Dancing Script', cursive;
-  color: rgba(27, 130, 170, 0.61);
+  color: #097695;
 }
 .subtitulo-slogan{
   font-family: 'Handlee', cursive;
@@ -16,7 +16,7 @@
 }
 .contenedor{
   width: 100%;
-  background-color:rgba(27, 130, 170, 0.219);
+  background-color:#c0dfd98f;
 }
 /*Navbar Styles*/
 .navbar-color{
@@ -52,21 +52,18 @@
   color: rgba(27, 130, 170, 0.61);
 }
 .social-icons{
-  background-color: #DCDCDC;
-  border: 1px solid rgba(27, 130, 170, 0.61);
-  width: 50px;
-  margin: 5px;
+ width:10%;
+ height: 30%;
+ padding:10px;
+
 }
-.social-icons:hover{
-  background-color: rgba(27, 130, 170, 0.61);
-  border:none;
-}
+
 .social-icons i {
-  
+  color: white;
 }
 .fa-facebook-f, .fa-instagram, .fa-envelope{
-  color:rgba(0, 0, 255, 0.568);
-  font-size: 17px;
+  color:black;
+  font-size: 30px;
 }
 
 /*Contact Styles*/

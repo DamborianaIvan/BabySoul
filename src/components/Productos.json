@@ -1,0 +1,79 @@
+{
+    "datos" :[
+        {
+        "id_producto": 0,
+        "categoria_producto":"accesorio",
+        "genero_producto": "niño",
+        "nombre_producto": "Muñeco maguis",
+        "precio_producto": 12.20,
+        "descripcion_producto": "campera de niño detallada"
+        },
+        {
+        "id_producto": 1,
+        "categoria_producto": "accesorio",
+        "genero_producto": "niña",
+        "nombre_producto": "Chice de ule",
+        "precio_producto": 12.20,
+        "descripcion_producto": "remerita de niña con alternativas de combinaciones"
+        },
+        {
+        "id_producto": 2,
+        "categoria_producto": "ropa",
+        "genero_producto": "niño",
+        "nombre_producto": "Camperita",
+        "precio_producto": 12.20,
+        "descripcion_producto": "Camperita de niña con alternativas de combinaciones"
+        },
+
+        {
+        "id_producto": 3,
+        "categoria_producto": "ropa",
+        "genero_producto": "niña",
+        "nombre_producto": "Remerita",
+        "precio_producto": 12.20,
+        "descripcion_producto": "Remerita de niña con alternativas de combinaciones"
+        },
+
+        {
+        "id_producto": 4,
+        "categoria_producto": "ropa",
+        "genero_producto": "niña",
+        "nombre_producto": "Musculosa",
+        "precio_producto": 12.20,
+        "descripcion_producto": "Musculosa de niña con alternativas de combinaciones"
+        },
+
+        {
+        "id_producto": 5,
+        "categoria_producto": "ropa",
+        "genero_producto": "niña",
+        "nombre_producto": "Sweaters",
+        "precio_producto": 12.20,
+        "descripcion_producto": "Sweaters de niña con alternativas de combinaciones"
+        },
+         {
+        "id_producto": 6,
+        "categoria_producto": "combo",
+        "genero_producto": "niños/as",
+        "nombre_producto": "Combo muñequito y blusita",
+        "precio_producto": 700,
+        "descripcion_producto": "Sweaters de niña con alternativas de combinaciones"    
+        },
+        {
+        "id_producto": 7,
+        "categoria_producto": "combo",
+        "genero_producto": "niños/as",
+        "nombre_producto": "Combo baberito y portachupetes",
+        "precio_producto": 700,
+        "descripcion_producto": "Sweaters de niña con alternativas de combinaciones"
+        },
+        {
+        "id_producto": 8,
+        "categoria_producto": "combo",
+        "genero_producto": "niños/as",
+        "nombre_producto": "Combo muñequito y colgante para picaportes",
+        "precio_producto": 700,
+        "descripcion_producto": "Sweaters de niña con alternativas de combinaciones"
+        }
+    ]
+}

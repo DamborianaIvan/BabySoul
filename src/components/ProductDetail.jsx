@@ -17,22 +17,7 @@ const ProductDetail = (props) => {
             productoActual = producto;
     });
 
-    let skere = [];
-
-    // showOthersProducts (){
-    //     productos.datos.map(producto => {
-    //         if(producto.categoria_producto == productoActual.categoria_producto)
-    //             return (   
-    //             <div className="col-lg-3 col-md-4 col-6">
-    //             <a href="#" className="d-block mb-4 h-100">
-    //                     <img className="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt=""></img>
-    //             </a>
-    //             </div>)
-            
-    //     }
-    // }
-
-
+    let otrosProductos = [];
    return ( 
             <div className="container">
 
@@ -69,8 +54,8 @@ const ProductDetail = (props) => {
                            <div class="row text-center text-lg-left">
                              {productos.datos.map(producto => {
                                 if(producto.categoria_producto == productoActual.categoria_producto){
-                                    skere.push(producto);
-                                    console.log(skere);
+                                    otrosProductos.push(producto);
+                                    console.log(otrosProductos);
                                     return (   
                                     <div className="col-lg-3 col-md-4 col-6">
                                         <a href="#" className="d-block mb-4 h-100">

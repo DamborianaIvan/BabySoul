@@ -21,7 +21,7 @@ class Resume extends Component {
                         <hr style={{borderTop:'3px dotted #87CEEB', width:'100%'}}/>
                         <p className="paragraph">Hace unos años empece a soñar… hacer prendas únicas, para bebes y niños, distintas de la ropita tradicional que podemos encontrar en cualquier local, después pensé que si la hacia yo, además, tendría un valor agregado, asique decidi poner manos a la obra y comenzar a trabajar mi sueño.
    Me embarque, de a poco, en esta aventura hermosa, me deje llevar por mis ideas, por lo que me gusta, aprendi que todos los colores son lindos y que cualquier tela puede ser suave. Me encanta hacer hincapié en los detalles mas pequeños para lograr diseños exclusivos que hacen la diferencia.
-   Entiendo que esta es mi forma mas linda de acompañar, ser parte y disfrutar el crecimiento de los mas pequeños</p>
+   Entiendo que esta es mi forma mas linda de acompañar, ser parte y disfrutar el crecimiento de los mas pequeños.</p>
                         <hr style={{borderTop:'3px dotted #87CEEB', width:'100%'}}/>
                         <h2 className="all-titles">Ciudad</h2>
                         <p className="paragraph ">Balcarce - Buenos Aires - Argentina</p>

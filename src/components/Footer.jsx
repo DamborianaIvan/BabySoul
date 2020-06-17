@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Row, Button, ButtonGroup} from 'react-bootstrap';
+import { Container, Col, Row} from 'react-bootstrap';
 import './Footer.css';    
 import BtnRedes from './BtnRedes';
 

@@ -17,6 +17,7 @@
 .contenedor{
   width: 100%;
   background-color:#c0dfd98f;
+
 }
 /*Navbar Styles*/
 .navbar-color{
@@ -58,11 +59,13 @@
 
 }
 
-.social-icons i {
-  color: white;
+
+.fa-facebook-f, .fa-instagram, .fa-envelope{
+  color: rgba(27, 130, 170, 0.61);
+  font-size: 30px;
 }
 .fa-facebook-f, .fa-instagram, .fa-envelope{
-  color:black;
+  color: rgba(27, 130, 170, 0.61);
   font-size: 30px;
 }
 
@@ -83,5 +86,10 @@
   font-family: 'Handlee', cursive;
   color: rgba(27, 130, 170, 0.527);
   font-size: 18px;
+  
+}
+
+/*Boton agregar al carro*/
+.btn-add{
   
 }

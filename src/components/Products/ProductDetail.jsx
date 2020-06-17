@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container, Col, Row, Button, ButtonGroup} from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import Product from './Product';
+
  
 import productos from './Productos.json';
 
@@ -18,6 +18,8 @@ const ProductDetail = (props) => {
     });
 
     let otrosProductos = [];
+
+    
    return ( 
             <div className="container">
 
@@ -55,11 +57,12 @@ const ProductDetail = (props) => {
                              {productos.datos.map(producto => {
                                 if(producto.categoria_producto == productoActual.categoria_producto){
                                     otrosProductos.push(producto);
-                                    console.log(otrosProductos);
+
+                                    // console.log(otrosProductos);
                                     return (   
                                     <div className="col-lg-3 col-md-4 col-6">
-                                        <a href="#" className="d-block mb-4 h-100">
-                                                <img className="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt=""></img>
+                                        <a className="d-block mb-4 h-100">
+                                        <img className="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt=""></img>
                                         </a>
                                     </div>)
                                 }

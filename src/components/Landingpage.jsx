@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Carousel, Row, Col, Button, ButtonGroup } from 'react-bootstrap';
+import { Container, Carousel, Row, Col } from 'react-bootstrap';
 import BtnRedes from './BtnRedes';
 
 
@@ -68,7 +68,7 @@ class Landingpage extends Component {
                     </Container>
                     <Container>
                     <div>
-
+                    
                     </div>    
                     </Container>
                 </Container>

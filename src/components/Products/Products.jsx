@@ -1,4 +1,6 @@
-import React, {Component} from 'react';
+import React, {Component, useContext} from 'react';
+import { ProductConsumer } from './Context';
+import Product from './Product';
 import {
 Tabs,
 Tab,
@@ -6,33 +8,22 @@ Grid,
 Cell,
 } from 'react-mdl';
 
-import Product from './Product';
-import productos from './Productos.json';
+
 
 
 
 
 
 class Products extends Component {
-    constructor(...props){
-    super(...props);
-    this.state={
+    
+    state={
         activeTab: 0, 
-        carritoCompras: [],
-        precioCompra :0
-        };
-    }
-addProduct = (id) => {
-    const productoActual = this.state.carritoCompras;
-    productos.datos.map(producto => {
-        if (producto.id_producto == id){
-            productoActual.push(producto);
-        }
-    })
-    this.setState({carritoCompras:productoActual});
-    console.log("Carrito de compras");
-    console.log(this.state.carritoCompras);
-}   
+    };
+    
+
+
+    
+
 incrementProduct = (id) => {
     console.log("This is the increment method");
 }
@@ -58,29 +49,18 @@ toggleCategories = () =>{
                     <hr style={{borderTop:'3px dotted #87CEEB', width:'50%', margin:'auto'}}/>
                 </div>
                 <div className="row">
-                    {productos.datos.map (producto => {
-                    if (producto.categoria_producto == 'ropa') {
-                            return(
-                                <Product 
-                                        key={producto.id_producto}
-                                        idProducto={producto.id_producto} 
-                                        nombreProducto={producto.nombre_producto}
-                                        descripcionProducto={producto.descripcion_producto}
-                                        precioProducto={producto.precio_producto}
-                                        clicked={() => this.addProduct(producto.id_producto)}
-
-
-
-
-
-                                        // showed={() => props.ingredientsAdded(ctrl.type)}
-                                        // removed={() => props.ingredientsRemoved(ctrl.type)}
-                                        // disabled={props.disabled[ctrl.type]}
-                                />
-                            ) 
-                        }
-                    }                              
-                    )}
+                    <ProductConsumer>
+                        {value =>{
+                            return value.products.datos.map(product =>{
+                                if (product.categoria_producto == "ropa"){
+                                    return <Product 
+                                                key={product.id_producto} 
+                                                product={product}    
+                                            />
+                                }
+                            })
+                        }}
+                    </ProductConsumer>
                 </div>
             </div>
         )
@@ -93,26 +73,18 @@ toggleCategories = () =>{
                     <hr style={{borderTop:'3px dotted #87CEEB', width:'50%', margin:'auto'}}/>
                 </div>
                 <div className="row">
-                    {productos.datos.map (producto => {
-                        if (producto.categoria_producto == 'accesorio') {
-                            
-                            return(
-                                <Product 
-                                    key={producto.id_producto}
-                                            
-                                    idProducto={producto.id_producto} 
-                                    nombreProducto={producto.nombre_producto}
-                                    descripcionProducto={producto.descripcion_producto}
-                                    precioProducto={producto.precio_producto}
-                                    clicked={() => this.addProduct(producto.id_producto)}
-                                    // added={() => props.ingredientsAdded(ctrl.type)}
-                                    // removed={() => props.ingredientsRemoved(ctrl.type)}
-                                    // disabled={props.disabled[ctrl.type]}
-                                />
-                            )                       
-                        }
-                    }
-                    )}
+                    <ProductConsumer>
+                        {value =>{
+                            return value.products.datos.map(product =>{
+                                if (product.categoria_producto == "accesorio"){
+                                    return <Product 
+                                                key={product.id_producto} 
+                                                product={product}    
+                                            />
+                                }
+                            })
+                        }}
+                    </ProductConsumer>
                 </div>
             </div>
             )
@@ -125,26 +97,18 @@ toggleCategories = () =>{
                         <hr style={{borderTop:'3px dotted #87CEEB', width:'50%', margin:'auto'}}/>
                     </div>
                     <div className="row">
-                        {productos.datos.map (producto => {
-                            if (producto.categoria_producto == 'combo') {
-                                
-                                return(
-                                    <Product 
-                                        key={producto.id_producto}
-                                                
-                                        idProducto={producto.id_producto} 
-                                        nombreProducto={producto.nombre_producto}
-                                        descripcionProducto={producto.descripcion_producto}
-                                        precioProducto={producto.precio_producto}
-                                        clicked={() => this.addProduct(producto.id_producto)}
-                                        // added={() => props.ingredientsAdded(ctrl.type)}
-                                        // removed={() => props.ingredientsRemoved(ctrl.type)}
-                                        // disabled={props.disabled[ctrl.type]}
-                                    />
-                                )                       
-                            }
-                        }
-                        )}
+                    <ProductConsumer>
+                        {value =>{
+                            return value.products.datos.map(product =>{
+                                if (product.categoria_producto == "combo"){
+                                    return <Product 
+                                                key={product.id_producto} 
+                                                product={product}    
+                                            />
+                                }
+                            })
+                        }}
+                    </ProductConsumer>
                     </div>
                 </div>
                 )

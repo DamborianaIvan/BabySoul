@@ -5,6 +5,8 @@ import { Navbar, Nav} from 'react-bootstrap';
 import Main from './components/Main'; 
 import Footer from './components/Footer';
 
+  
+
 
 
 function App() {
@@ -17,13 +19,15 @@ function App() {
             <Nav>
                   <Nav.Link><Link to="/products" className="ml-4 navbar-links-colors mr-4">Productos</Link></Nav.Link>
                   <Nav.Link><Link to="/contact" className="ml-4 navbar-links-colors mr-4">Contacto</Link></Nav.Link>
-                  <Nav.Link><Link to="/buy" className="ml-4 navbar-links-colors mr-4"><i class="fas fa-shopping-cart"></i> </Link></Nav.Link>
+                  <Nav.Link><Link to="/buy" className="ml-4 navbar-links-colors mr-4"><i className="fas fa-shopping-cart"></i> </Link></Nav.Link>
             </Nav>
         </Navbar.Collapse>
-      </Navbar>  
-      <section className="bg-color container">
-        <Main />
-      </section>    
+      </Navbar>
+      
+        <section className="bg-color container">
+            <Main /> 
+        </section>    
+      
       <section className="bg-color container-fluid">
         <Footer />
       </section>

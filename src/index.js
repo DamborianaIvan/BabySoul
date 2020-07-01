@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {ProductProvider} from './components/Products/Context';
 
 import '../node_modules/react-mdl/extra/material.css';
 import '../node_modules/react-mdl/extra/material.js';
@@ -11,9 +12,11 @@ import '../node_modules/react-mdl/extra/material.js';
 import { BrowserRouter } from 'react-router-dom';
  
 ReactDOM.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+    <ProductProvider>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </ProductProvider>
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

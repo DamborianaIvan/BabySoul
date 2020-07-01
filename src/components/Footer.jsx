@@ -6,7 +6,7 @@ import BtnRedes from './BtnRedes';
 const footer = () => (
     <Container className="mt-2 contenedor-footer ">
         <Row className="align-items-center">
-            <Col lg="8" class="align-items-center">           
+            <Col lg="8" className="align-items-center">           
                 <BtnRedes />
             </Col>
             <Col lg="4">

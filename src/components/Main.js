@@ -8,12 +8,15 @@ import Contact from './Contact';
 import ProductsDetail from './Products/ProductDetail';
 import ShoppingCart from './Cart/ShoppingCart';
 
+
+
+
 const Main = () => (
     <Switch>
         <Route path="/products/:idProducto">
             <ProductsDetail />
         </Route>
-
+        
         <Route path="/buy" component={ShoppingCart}/>
         <Route exact path="/" component={LandingPage}/>
         <Route path="/products" component={Products}/>
